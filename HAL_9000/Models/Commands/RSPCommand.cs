@@ -13,7 +13,7 @@ namespace HAL_9000.Models.Commands
 
         public override void Execute(Message message, TelegramBotClient client)
         {
-            throw new NotImplementedException();
+            client.SendTextMessageAsync(message.Chat.Id, "RSP game started");
         }
     }
 }

@@ -11,7 +11,7 @@ namespace HAL_9000.Controllers
     {
         public string Index()
         {
-            return "Hello!";
+            return "Its running!";
             //return string.Format(Settings.Url, Settings.Path);
         }
     }

@@ -9,7 +9,7 @@ namespace HAL_9000.Models.Commands
 
         public override void Execute(Message message, TelegramBotClient client)
         {
-            client.SendTextMessageAsync(message.Chat.Id, $"Hello {message.From.FirstName} {message.From.LastName}!", replyToMessageId: message.MessageId);
+            client.SendTextMessageAsync(message.Chat.Id, $"Hello {message.From.FirstName} {message.From.LastName}!!!", replyToMessageId: message.MessageId);
         }
     }
 }

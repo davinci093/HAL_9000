@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace HAL_9000.Models
+﻿namespace HAL_9000.Models
 {
     public static class Settings
     {
@@ -12,7 +7,5 @@ namespace HAL_9000.Models
         public static string Name { get; set; } = @"Kekistan_Ambassy_Bot";
         public static string Token { get; set; } = @"598866502:AAGlC__riVtJLRhWsnivRZMfYG500zgyKLw";
         public const string Path = @"update";
-
-
     }
 }

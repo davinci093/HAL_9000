@@ -5,7 +5,6 @@ namespace HAL_9000.Models.Commands
 {
     public abstract class Command
     {
-
         public abstract string Name { get; }
 
         public abstract void Execute(Message message, TelegramBotClient client);

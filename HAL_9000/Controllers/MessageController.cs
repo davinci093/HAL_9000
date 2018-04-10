@@ -14,7 +14,6 @@ namespace HAL_9000.Controllers
 {
     public class MessageController : ApiController
     {
-
         [Route(Settings.Path)]
         public async Task<OkResult> Update([FromBody]Update update)
         {

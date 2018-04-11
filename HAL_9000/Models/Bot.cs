@@ -19,8 +19,8 @@ namespace HAL_9000.Models
             else
             {
                 GetCommands();
-                client = new TelegramBotClient(Settings.Token);
-                string hook = string.Format(Settings.Url, Settings.Path);
+                client = new TelegramBotClient(AppSettings.Token);
+                string hook = string.Format(AppSettings.Url, AppSettings.Path);
                 await client.SetWebhookAsync(hook);
                 return client;
             }

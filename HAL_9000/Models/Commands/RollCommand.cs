@@ -13,7 +13,7 @@ namespace HAL_9000.Models.Commands
 
         public override void Execute(Message message, TelegramBotClient client)
         {
-            client.SendTextMessageAsync(message.Chat.Id, $"{Settings.GetRandom.Next(0, 101).ToString()}", replyToMessageId: message.MessageId);
+            client.SendTextMessageAsync(message.Chat.Id, $"{AppSettings.GetRandom.Next(0, 101).ToString()}", replyToMessageId: message.MessageId);
         }
     }
 }

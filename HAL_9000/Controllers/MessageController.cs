@@ -24,10 +24,10 @@ namespace HAL_9000.Controllers
 
             foreach (var command in commands)
             {
-                if (command.Contains(message.Text))
+                if (message.Text != null && command.Contains(message.Text))
                 {
                     command.Execute(message, client);
-                    break;
+                    return Ok();
                 }
             }
 

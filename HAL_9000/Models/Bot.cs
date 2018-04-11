@@ -30,6 +30,7 @@ namespace HAL_9000.Models
         {
             commandsList = new List<Command>();
             commandsList.Add(new HelloCommand());
+            commandsList.Add(new RollCommand());
         }
     }
 }

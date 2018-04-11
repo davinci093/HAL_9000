@@ -33,5 +33,11 @@ namespace HAL_9000.Controllers
 
             return Ok();
         }
+
+        //[Route("info")]
+        //public string Info()
+        //{
+        //    return Bot.client.GetWebhookInfoAsync().ToString();
+        //}
     }
 }

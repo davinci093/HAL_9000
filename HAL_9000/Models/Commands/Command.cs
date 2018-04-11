@@ -11,7 +11,9 @@ namespace HAL_9000.Models.Commands
 
         public bool Contains(string command)
         {
-            return command.Contains(Name);
+            //return command == $"/{Name}";
+            //return Name[0] == '/' && Name.Contains($"/{Name}");
+            return Name.Contains(Name);
         }
     }
 }
